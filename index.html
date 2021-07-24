@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Application</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./src/stopwatch.js" defer></script>
+    <script src="./src/countdown.js" defer></script>
+        <link rel="icon" href="./images/icon.jpg">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">
+        <select name="userinput" id="timers" onclick="timerstype()">
+            <option value="stopwatch">  Stopwatch</option>
+            <option value="countdown">Countdown Timer</option>
+            
+            
+          </select>
+          <br><br>
+    </div>
+
+    <hr>
+    <div id="rootstopwatch" class="root" style="display:flex">
+       <div>
+        <div class="content-container">
+            <label id="hours">00</label>:<label id="minutes">00</label>:<label id="seconds">00</label>
+        </div>
+        <div class="button">
+            <span onclick="startpause1()"><i class="fa fa-play-circle fa-4x" id="startpause"></i></span>
+            <span onclick="reset()" id="reset"><i class="fa fa-refresh fa-4x"></i></span>
+            
+
+        </div>
+       </div>
+        
+       
+    </div> 
+    
+    <div id="rootcountdown"  class="root" style="display:none">
+        <div id="inputs">
+
+            <label for="">Hours :</label>
+            <input type="text" id="userhours" value=" ">
+            <br>
+            <label for="">Minutes :</label>
+            <input type="text" id="userminutes" value=" ">
+            <br>
+            <label for="">Seconds :</label>
+            <input type="text" id="userseconds" value=" ">
+        </div>
+        <div>
+            <div class="content-container">
+                <label id="hoursc">00</label>:<label id="minutesc">00</label>:<label id="secondsc">00</label>
+            </div>
+            <div class="button" >
+                <span onclick="startpausecountdown()"><i class="fa fa-play-circle fa-4x" id="startpausec"></i></span>
+                <span onclick="resetc()" id="resetc"><i class="fa fa-refresh fa-4x"></i></span>
+            <audio src="./audio/timesup.wav" id="audio"></audio>
+    
+            </div>
+        </div>
+       
+        
+       
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+        <p>Time's up</p>
+        <span onclick="resetc()" class="close"><i class="fa fa-refresh"></i></span>
+        </div>
+    
+    </div>
+
+
+</body>
+</html>

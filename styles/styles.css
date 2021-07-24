@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+body{
+    background-image: url("../images/jogging.svg"), url("../images/jogging.svg");
+    background-repeat: no-repeat;
+    background-size: 1000px 400px;
+    background-position: top left,bottom right ;
+    background-color: #E6677F;
+ 
+   
+}
+
+hr{
+    width: 300px;
+    height: 3px;
+    border:2px solid #916097;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    margin-top:40px;
+}
+
+select{
+    font-size: 25px;
+    background-color: #C2FCF4;
+    padding: 10px;
+    border-radius: 20px;
+    outline:none;
+}
+
+.root{
+    border-radius:50px;
+    width:600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 500px;
+    background-color: #C2FCF4;
+
+    
+}
+.content-container{
+    color:black;
+    font-size: 90px;
+   
+    
+}
+
+@media  only screen and (max-width:487px) {
+    .content-container{
+        font-size: 60px;
+    }
+}
+
+@media  only screen and (max-width:628px) {
+    .root{
+        width:auto;
+        margin:20px;
+        height: auto;
+    }
+    body{
+        background-image: url("../images/jogging.svg");
+        background-repeat: no-repeat;
+        background-position: center 450px ;
+     
+       
+    }
+}
+
+#reset,#resetc{
+    display:none;
+}
+
+i {
+    margin:20px;
+}
+
+.button{
+
+    text-align: center;
+}
+
+input{
+    width:80px;
+    border-radius: 8px;
+    height: 30px;
+}
+
+#inputs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-top: 20px;
+}
+
+@media  only screen and (max-width:555px) {
+    #inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+
+.modal-content {
+    background-color: rgb(46, 221, 221);
+    margin: 250px auto; 
+    padding: 20px;
+    font-size: 40px;
+    width: 50%; 
+    height: 25%;
+    text-align: center;
+    border-radius: 20px;
+}
+p{
+    margin-top: 30px;
+}
+
