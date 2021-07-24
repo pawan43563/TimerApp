@@ -81,7 +81,9 @@ select{
 i {
     margin:20px;
 }
-
+input{
+    outline: none;
+}
 .button{
 
     text-align: center;
@@ -99,6 +101,7 @@ input{
     flex-wrap: wrap;
     width: 90%;
     margin-top: 20px;
+  
 }
 
 @media  only screen and (max-width:555px) {
@@ -132,7 +135,7 @@ input{
     padding: 20px;
     font-size: 40px;
     width: 50%; 
-    height: 25%;
+    height: 30%;
     text-align: center;
     border-radius: 20px;
 }
