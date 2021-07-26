@@ -11,22 +11,23 @@ var modal = document.getElementById("myModal");
 var executionglobal;
 
 function startpausecountdown(){
-    if(typeof userhours.value!=='number' ){
+    
+    if(isNaN(userhours.value)){
         alert("Provide valid Inputs")
         return
     }
-    if(typeof userhours.minutes!=='number' ){
+    if(isNaN(userminutes.value)){
         alert("Provide valid Inputs")
         return
     }
-    if(typeof userhours.seconds!=='number' ){
+    if(isNaN(userseconds.value)){
         alert("Provide valid Inputs")
         return
     }
         
-    if(userhours.value==" " ){
-        if(userminutes.value==" "){
-            if(userseconds.value==" "){
+    if(userhours.value=="" ){
+        if(userminutes.value==""){
+            if(userseconds.value==""){
                 alert("Provide Inputs")
                 return 
             }

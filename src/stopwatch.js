@@ -1,6 +1,7 @@
 var hoursLabel = document.getElementById("hours");
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
+// var milliLabel = document.getElementById("milliseconds");
 const startpause=document.getElementById("startpause");
 const resetbutton=document.getElementById("reset");
 let stop=document.getElementById("rootstopwatch");
@@ -57,6 +58,7 @@ function timer() {
   
 function setTime() {
   ++totalSeconds;
+  // milliLabel.innerHTML=pad(totalSeconds*1000)
   secondsLabel.innerHTML = pad(totalSeconds % 60);
   minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
   hoursLabel.innerHTML = pad(parseInt(totalSeconds / 3600));
