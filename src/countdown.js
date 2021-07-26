@@ -11,7 +11,19 @@ var modal = document.getElementById("myModal");
 var executionglobal;
 
 function startpausecountdown(){
-
+    if(typeof userhours.value!=='number' ){
+        alert("Provide valid Inputs")
+        return
+    }
+    if(typeof userhours.minutes!=='number' ){
+        alert("Provide valid Inputs")
+        return
+    }
+    if(typeof userhours.seconds!=='number' ){
+        alert("Provide valid Inputs")
+        return
+    }
+        
     if(userhours.value==" " ){
         if(userminutes.value==" "){
             if(userseconds.value==" "){

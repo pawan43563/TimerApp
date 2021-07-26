@@ -135,7 +135,7 @@ input{
     padding: 20px;
     font-size: 40px;
     width: 50%; 
-    height: 30%;
+    height: auto;
     text-align: center;
     border-radius: 20px;
 }
